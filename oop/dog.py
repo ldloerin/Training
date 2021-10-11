@@ -4,26 +4,30 @@ class Dog:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-    
+
     def __str__(self):
         return f"{self.name} is {self.age} years old"
 
-    def speak(self, sound = "nothing"):
+    def speak(self, sound="nothing"):
         print(self.name, "barks", sound)
+
 
 class LabradorOrigin:
     origin = "UK"
 
+
 class Labrador(Dog, LabradorOrigin):
-    def speak(self, sound = "wau"):
+    def speak(self, sound="wau"):
         print(self.name, "says", sound)
+
 
 class Dachshund(Dog):
-    def speak(self, sound = "wau wau"):
+    def speak(self, sound="wau wau"):
         print(self.name, "says", sound)
 
+
 class Terrier(Dog):
-    def speak(self, sound = "wuff"):
+    def speak(self, sound="wuff"):
         print(self.name, "says", sound)
         return super().speak(sound)
 
