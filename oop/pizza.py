@@ -21,8 +21,8 @@ class Pizza():
     def overview(cls):
         cls.margharita()
         cls.prosciutto()
-        print('Margharita:',  str(cls.margharita_price), '€ --- Ingredients:', cls.margharita_covering)
-        print('Margharita:',  str(cls.prosciutto_price), '€ --- Ingredients:', cls.prosciutto_covering)
+        print('Margharita:', str(cls.margharita_price), '€ --- Ingredients:', cls.margharita_covering)
+        print('Margharita:', str(cls.prosciutto_price), '€ --- Ingredients:', cls.prosciutto_covering)
 
     def area(self):
         print('Pizza area:', self.circle_area(self.radius))
