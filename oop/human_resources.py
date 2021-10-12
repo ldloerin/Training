@@ -31,6 +31,7 @@ class PayrollSystem:
             print(f'- Check amount: {employee.calculate_payroll()}')
             print('')
 
+
 david = SalaryEmployee(2, 'David', 150)
 confidental = david.calculate_payroll()
 print(confidental)
