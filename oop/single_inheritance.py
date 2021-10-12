@@ -35,4 +35,6 @@ class Terrier(Dog):
 bob = Labrador("Bob", 1.5)
 tom = Dachshund("Tom", 4)
 tim = Terrier("Tim", 4)
-tim.speak("grr")
+tim.speak('grrrr')
+tim.speak()
+print(bob.origin)

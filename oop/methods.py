@@ -1,7 +1,7 @@
 import math
 
 
-class Pizza():
+class Pizza:
     def __init__(self, diameter):
         self.radius = diameter / 2
 
