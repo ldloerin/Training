@@ -14,10 +14,10 @@ class Pizza():
     def prosciutto(cls):
         cls.prosciutto_covering = ['mozzarella', 'tomato', 'ham']
         print(cls.prosciutto_covering)
-    
+
     def area(self):
-        print(self.circle_area(self.radius))
-    
+        print('Pizza area:', self.circle_area(self.radius))
+
     @staticmethod
     def circle_area(r):
         return math.pi * r ** 2
