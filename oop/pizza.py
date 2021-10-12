@@ -8,12 +8,21 @@ class Pizza():
     @classmethod
     def margharita(cls):
         cls.margharita_covering = ['mozzarella', 'tomato']
-        print(cls.margharita_covering)
+        cls.margharita_price = 5
+        return cls.margharita_covering
 
     @classmethod
     def prosciutto(cls):
         cls.prosciutto_covering = ['mozzarella', 'tomato', 'ham']
-        print(cls.prosciutto_covering)
+        cls.prosciutto_price = 6
+        return cls.prosciutto_covering
+
+    @classmethod
+    def overview(cls):
+        cls.margharita()
+        cls.prosciutto()
+        print('Margharita:',  str(cls.margharita_price), '€ --- Ingredients:', cls.margharita_covering)
+        print('Margharita:',  str(cls.prosciutto_price), '€ --- Ingredients:', cls.prosciutto_covering)
 
     def area(self):
         print('Pizza area:', self.circle_area(self.radius))
@@ -23,7 +32,7 @@ class Pizza():
         return math.pi * r ** 2
 
 
-Pizza.margharita()
-Pizza.prosciutto()
+print(Pizza.margharita())
+Pizza.overview()
 my_pizza = Pizza(20)
 my_pizza.area()
