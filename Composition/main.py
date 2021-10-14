@@ -11,16 +11,16 @@ from employees import (
 
 manager = Manager(1, 'Marcus Foley', 3000)
 manager.address = Address(
-    '121 Admin Rd', 
-    'Concord', 
-    'NH', 
+    '121 Admin Rd',
+    'Concord',
+    'NH',
     '03301'
 )
 secretary = Secretary(2, 'Julia Smith', 1500)
 secretary.address = Address(
-    '67 Paperwork Ave.', 
-    'Manchester', 
-    'NH', 
+    '67 Paperwork Ave.',
+    'Manchester',
+    'NH',
     '03101'
 )
 sales_guy = SalesPerson(3, 'Kevin Newman', 1000, 250)
