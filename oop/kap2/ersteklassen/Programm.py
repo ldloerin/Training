@@ -1,0 +1,2 @@
+from Kunde import *
+Kunde()

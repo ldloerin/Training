@@ -22,17 +22,18 @@ class Pizza:
         cls.margharita()
         cls.prosciutto()
         print('Margharita:', str(cls.margharita_price), '€ --- Ingredients:', cls.margharita_covering)
-        print('Margharita:', str(cls.prosciutto_price), '€ --- Ingredients:', cls.prosciutto_covering)
+        print('Prosciutto:', str(cls.prosciutto_price), '€ --- Ingredients:', cls.prosciutto_covering)
 
     def area(self):
         print('Pizza area:', self.circle_area(self.radius))
+        print(dir(self.prosciutto))
 
     @staticmethod
     def circle_area(r):
         return math.pi * r ** 2
 
 
-print(Pizza.margharita())
-Pizza.overview()
+#print(Pizza.margharita())
+#Pizza.overview()
 my_pizza = Pizza(20)
 my_pizza.area()
